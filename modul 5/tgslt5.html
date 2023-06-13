@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function studikasus() {
+      let kesulitanBelajar = prompt("Masukkan jenis kesulitan belajar:");
+      let solusi = "";
+
+      switch (kesulitanBelajar) {
+        case "tidak memahami materi":
+          solusi = "Baca materi yang poin-poinnya penting";
+          break;
+        case "terlalu banyak tugas":
+          let jamBelajar = prompt("Masukkan jumlah jam belajar:");
+          if (jamBelajar < 4) {
+            solusi = "Buat jadwal studi yang teratur dan prioritaskan tugas";
+          } else {
+            solusi = "Mintalah bantuan teman untuk mengatasi beban tugas";
+          }
+          break;
+        case "terganggu lingkungan":
+          let lokasiBelajar = prompt("Masukkan lokasi belajar (perpustakaan/ruang belajar):");
+          if (lokasiBelajar === "perpustakaan" || lokasiBelajar === "ruang belajar") {
+            solusi = "Cari tempat yang tenang untuk belajar";
+          } else {
+            solusi = "Gunakan headphone untuk mengurangi gangguan";
+          }
+          break;
+        default:
+          solusi = "Belum ada solusi yang ditentukan";
+          break;
+      }
+
+      alert("Jika mahasiswa mengalami kesulitan belajar: " + kesulitanBelajar + "\nSolusinya adalah: " + solusi);
+    }
+  </script>
+</head>
+<body>
+  <button onclick="studikasus()">Kesulitan Belajar Mahasiswa</button>
+</body>
+</html>
