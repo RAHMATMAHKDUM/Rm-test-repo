@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background-color: aqua;
+      }
+      .game-container {
+        margin: 0 auto;
+        width: 50%;
+
+        text-align: center;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 4px 7px rgba(0, 0, 0, 0.3);
+      }
+
+      .difficulty {
+        margin-top: 100px;
+      }
+
+      .btn {
+        background-color: #4caf50;
+        color: white;
+        padding: 20px 50px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-right: 15px;
+        font-size: 14px;
+        margin: 0 10px;
+      }
+
+      .btn:hover {
+        background-color: #3e8e41;
+      }
+
+      .easy {
+        background-color: green;
+      }
+
+      .medium {
+        background-color: orange;
+      }
+
+      .hard {
+        background-color: red;
+      }
+    </style>
+    <div class="game-container">
+      <h1>Level Kesulitan</h1>
+      <div class="difficulty">
+        <a href="index.html">
+          <button class="btn easy">Mudah</button>
+        </a>
+        <a href="index2.html">
+          <button class="btn medium">Sedang</button>
+        </a>
+        <a href="index3.html">
+          <button class="btn hard">Sulit</button>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
